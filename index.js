@@ -26,15 +26,17 @@ let currentItem = 2;
 
 loadMoreBtn.onclick = () => {
   let boxes = [...document.querySelectorAll('.main-portfolio .portfolio .frames')];
-  for (var i = currentItem; i < currentItem + 2; i++){
-    boxes[i].style.display = 'inline-block';
+  for (let i = currentItem; i < currentItem + 2 && i < boxes.length; i++) {
+    boxes[i].style.display = 'inline-block'; // Display items if within range
   }
   currentItem += 2;
 
-  if(currentItem >= boxes.length){
+  // Hide the button if we've reached or exceeded the number of available items
+  if (currentItem >= boxes.length) {
     loadMoreBtn.style.display = 'none';
   }
-}
+};
+
   
 
 
