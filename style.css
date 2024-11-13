@@ -1,0 +1,2532 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #8750F7 #2a1454;
+    
+}
+
+.container {
+    background: #10032a;
+}
+
+.introduction {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+   
+}
+
+.logo-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 40px;
+    position: absolute;
+    left: 5rem;
+    top: 0.6rem;
+    position: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #05000e;
+    padding: 1.4rem;
+    padding: 2rem;
+    width: 100%;
+   
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    margin-left: 19rem;
+}
+
+.nav-list {
+    list-style: none;
+    position: relative; 
+}
+
+
+.nav-list, a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8750F7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease; 
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1);
+}
+
+.hire-btn {
+    position: absolute;
+    top: 2rem;
+    left: 65rem;
+}
+
+.hire-btn a {
+    border: none;
+    padding: 13px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    color: #ffffff;
+    background: #212529;
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    text-decoration: none;
+    background-size: 200% 100%; 
+    background-position: right bottom;
+    transition: background-position 0.4s ease-in-out; 
+}
+
+.hire-btn a:hover {
+    background-position: left bottom; 
+}
+
+.nav-close, .nav-toggle {
+    display: none;
+}
+
+
+.about {
+    display: flex;
+    justify-content:center;
+    gap: 35rem;
+}
+
+.about-item {
+    margin-top: 5rem;
+}
+
+.about h3 {
+    font-size: 40px;
+    font-weight:;
+    color: #dddddd;
+    font-family: 'Courier New';
+}
+
+.about h1 {
+    font-size: 70px;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #dddddd;
+    margin-top: 1rem;
+    
+}
+
+.social {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.cv {
+    border: 1px solid #8750f7;
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.cv a {
+    color: #8750f7;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+.cv:hover {
+    background: #8750F7;
+    color: #ffffff;     
+}
+
+
+.cv:hover a,
+.cv:hover .fa-download {
+    color: #ffffff;
+}
+
+.fa-download {
+    color: #8750f7;
+    transition: color 0.3s;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 10px;
+    
+}
+
+.social-icons div {
+    border: 1px solid  #8750f7;
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: 38px;
+    height: 38px;
+    transition: background 0.3s, border-color 0.3s; 
+    
+}
+
+.fa-twitter, .fa-github, .fa-linkedin-in {
+    font-size: 18px;
+    color: #8750f7;
+    transition: color 0.3s;
+}
+
+
+.social-icons div:hover {
+    background: #8750f7;
+    border-color: #8750f7;
+}
+
+.social-icons div:hover .fa-twitter,
+.social-icons div:hover .fa-github,
+.social-icons div:hover .fa-linkedin-in {
+    color: #ffffff;
+}
+
+
+.IMGS {
+    border-radius: 20px;
+    top: -4rem;
+}
+
+.IMG1 {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20px;
+    transform: rotate(4.29deg);
+    transition: 0.3s ease;
+    position: absolute;
+    top: 11rem;
+    left: 45rem;
+
+}
+
+.IMG2 {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: 45.6rem; 
+    top: 16rem;   
+}
+
+.IMG1:hover {
+    transform: rotate(0deg);
+    border: 3px solid #8750F7;
+}
+
+/* :::::::::::::::::::: Home ends here :::::::::::::::::::::  */
+
+.skills {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    background: #05000e;
+}
+.skills-h1, .skills-p {
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 70px;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.skills p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #8750f7;
+    margin-top: 1rem;
+}
+
+.skills img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.javascript, .react, .vue, .angular, .wordpress, .figma {
+    border: 1px solid black;
+    padding: 30px 45px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border-radius: 30px;
+    width: 11rem;
+    -webkit-filter: grayscale(90%);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills span {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #747779;
+}
+
+.skills-icons p {
+    text-align: center;
+}
+
+.javascript:hover, 
+.react:hover, 
+.vue:hover, 
+.angular:hover, 
+.wordpress:hover, 
+.figma:hover {
+    background-color: #2a1454; 
+    color: #8750F7; 
+    -webkit-filter: grayscale(0%); 
+}
+
+.javascript img, 
+.react img, 
+.vue img, 
+.angular img, 
+.wordpress img, 
+.figma img {
+    transition: filter 0.3s ease; 
+}
+
+.javascript:hover img, 
+.react:hover img, 
+.vue:hover img, 
+.angular:hover img, 
+.wordpress:hover img, 
+.figma:hover img {
+    filter: none;
+}
+
+.javascript, .react, .vue, .angular, .wordpress, .figma:hover {
+    color: #8750F7;
+}
+
+/* ::::::::::::::::::::::::::Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+
+.main-portfolio {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-portfolio h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 3rem;
+
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-portfolio .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-left: -4rem;
+} 
+
+.main-portfolio .portfolio .frames {
+    display: none;
+}
+
+.main-portfolio .portfolio .frames:nth-child(1), 
+.main-portfolio .portfolio .frames:nth-child(2) {
+    display: inline-block;
+}
+
+
+.frames {
+    position: relative; 
+    width: 35rem;
+    height: 25rem;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.frames img {
+    width: 35rem; 
+    height: 25rem;
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-text {
+    position: absolute; 
+    top: 13.5rem;
+    left: 1rem;
+    width: 95%;
+    height: 40%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+}
+
+.frames:hover .portfolio-text {
+    opacity: 1; 
+}
+
+.frames:hover img {
+    transform: scale(1.05); 
+}
+
+.portfolio-text span a {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.portfolio-text span a img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    background: #ffffff;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-text span a:hover img {
+    transform: translateX(5px);
+}
+
+#load-more {
+    padding: 15px;
+    width: 10rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-left: 27rem;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    background: #212529;
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    transition: 0.4s;
+    border: none;
+    background-size: 200% 100%; 
+    background-position: right bottom;
+    transition: background-position 0.4s ease-in-out;   
+    cursor: pointer;     
+}
+
+
+#load-more:hover {
+    background-position: left bottom; 
+}
+
+/* ::::::::::::::::::::::::::::Portfolio ends here::::::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+
+
+.resume {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.fa-award, .fa-graduation-cap {
+    font-size: 3rem;
+}
+
+.certification, .education {
+    padding-bottom: 4rem;
+}
+
+.certification h1 {
+    font-size: 50px;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.alt-school, .school, .regonent  {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background: #18063a;
+    transition: background 1.3s ease, color 1.3s ease;
+}
+
+.alt-school p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #dddddd;
+    margin-bottom: 1rem;
+}
+
+.alt-school span {
+    text-align: center;
+    font-size: 25px;
+    color: #747779;
+}
+
+.regonent {
+    margin-top: 2rem;
+}
+
+.regonent p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #dddddd;
+    margin-top: 1rem;  
+    margin-bottom: 1rem;
+}
+
+.regonent span {
+    text-align: center;
+    font-size: 25px;
+    color: #747779;
+}
+
+.alt-school, .school, .regonent  {
+    font-size: 14px;
+    font-weight:;
+    color: #dddddd;
+    font-family: 'Courier New';
+}
+
+.education h1 {
+    font-size: 50px;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.school p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #dddddd;
+    margin-top: 1rem;  
+    margin-bottom: 1rem; 
+}
+
+.school span {
+    text-align: center;
+    font-size: 20px;
+    color: #747779; 
+}
+
+.alt-school p,
+.school p,
+.regonent p,
+.alt-school span,
+.school span,
+.regonent span {
+    transition: color 1.3s ease;
+}
+
+.alt-school span,
+.school span,
+.regonent span {
+    transition: color 1.3s ease; 
+}
+
+.alt-school:hover,
+.regonent:hover,
+.school:hover {
+    background: #8750F7;
+    color: #ffffff;
+}
+
+.alt-school:hover p,
+.alt-school:hover span,
+.regonent:hover p,
+.regonent:hover span,
+.school:hover p,
+.school:hover span {
+    color: #ffffff;
+}
+
+/* :::::::::::::::::::::::::::::Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    background: #05000e;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.contact h1 {
+    font-size: 50px;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.inputs {
+    background: #0d0123;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+input {
+    padding: 15px;
+    width: 18rem;
+    border-radius: 10px;
+    background: #050709;
+    border: 1px solid #22272c;
+    transition: all 0.3s 0s ease-out;
+}
+
+::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input1 {
+    display: flex;
+    gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+.input2 {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.input3 {
+    display: grid;
+}
+
+.message-input {
+    padding-bottom: 10rem;
+    width: 37rem;
+}
+
+.input3 button {
+    padding: 15px;
+    width: 10rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #212529;
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    transition: 0.4s;
+    border: none;
+    background-size: 200% 100%; 
+    background-position: right bottom;
+    transition: background-position 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.input3 button:hover {
+    background-position: left bottom; 
+}
+
+.details {
+    padding-top: 8rem;
+}
+
+.contact img {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(161deg,  #2a1454 0%, #8750f7 100%);
+}
+
+.phone, .email, .address {
+    display: flex;
+    gap: 1rem;
+}
+
+.phone, .email, .address {
+    padding-top: 1rem;
+}
+
+.phone, .email, .address p {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    color: #dddddd;
+    margin-top: 1rem;  
+}
+
+.phone, .email, .address h3 {
+    font-size: 20px;
+    color: #dddddd;
+    font-family: 'Courier New';
+}
+/* ::::::::::::::::::::::::::::Contact ends here:::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+
+
+.footer {
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+
+.footer ul li {
+    list-style: none;
+    position: relative;
+}
+
+.footer ul li, a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+.footer ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8750F7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease; 
+}
+
+.footer ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::: Footer ends here:::::::::::::::::::::::::::::::::::::::  */
+
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::Media:::::::::::::::::::::::::::::::::::::::::::::::  */
+
+@media (max-width: 1024px){
+    
+    .logo-img {
+        top: 0.9rem;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    
+    .about-item {
+        margin-top: 5rem;
+    }
+    
+    .nav-menu {
+        margin-left: -4rem; 
+    }
+    
+    
+    .nav-list, a {
+        font-size: 18px;
+    }
+
+    .hire-btn {
+        top: 2rem;
+        left: 52rem;
+    }
+
+    .hire-btn a {
+        padding: 13px 20px;
+        font-size: 20px;
+        border-radius: 50px;
+    }
+
+    .about {
+        gap: 25rem;
+    }
+    
+    .IMGS {
+        border-radius: 20px;
+        top: -4rem;
+    }
+    
+    .IMG1 {
+        width: 23rem;
+        height: 23rem;
+        left: 37.5rem;
+    }
+    
+    .IMG2 {
+        top: 13.5rem;   
+        left: 38rem;
+    }
+    
+    
+    /* ::::::::::::::::::::::::::::::::::::::: Home ends here :::::::::::::::::::::::::::::  */
+    
+    .skills p {
+        font-size: 18px;
+    }
+    
+    .javascript, .react, .vue, .angular, .wordpress, .figma {
+        width: 9rem;
+    }
+    
+    /* ::::::::::::::::::::::::::Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+    
+    
+    .main-portfolio .portfolio {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-left: 1rem;
+    } 
+    
+    .frames {
+        width: 29rem;
+        height: 24rem;
+    }  
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::Portfolio ends here::::::::::::::::::::::::::::::::::::::::::::::  */
+   
+   
+    .fa-award, .fa-graduation-cap {
+        margin-left: 2rem;
+    }
+
+    .alt-school,
+    .regonent,
+    .school {
+        width: 30rem;
+        margin-left: 2rem;
+    }
+    
+    .alt-school, .school, .regonent  {
+        border: 1px solid black;
+        padding: 20px;
+        
+    }
+
+    .alt-school h3,
+     .regonent h3,
+     .school h3{ 
+        font-size: 15px;
+    }
+    
+    .alt-school span{
+        font-size: 15px;
+        
+    }
+    
+    .regonent span {
+        font-size: 15px;
+    }
+    
+    .school span {
+        font-size: 15px;
+    }
+   
+    
+    /* :::::::::::::::::::::::::::::Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+    
+    input {
+        width: 15rem;
+    }
+
+    .details {
+        margin-right: 10rem;
+    }
+    
+    
+    .message-input {
+        width: 33rem;
+    }
+    
+    
+    .phone, .email, .address h3 {
+        font-size: 15px;
+    }
+    /* ::::::::::::::::::::::::::::Contact ends here:::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+    
+    .footer img {
+        left: 31rem;
+        top: 314rem;
+    }
+    
+}
+    /* :::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::::::::::::::::::::  */
+    
+ 
+    @media (max-width: 912px) {
+        .nav-menu {
+            position: fixed;
+            top: -100%;
+            left: 4rem;
+            background: #2a1454;
+            width: 100%;
+            box-shadow: 0 1px 16px hsl(210, 55%, 24%, .1);
+            padding-block: 3.5em 2em;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5em;
+            transition: .9s ease-out;
+          }
+
+          .nav-toggle, .nav-close {
+            display: inline-flex;
+            font-size: 3rem;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        
+          .nav-list {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 2em;
+            margin-left: 2em;
+          }
+
+          .nav-toggle {
+           margin-left: 45rem;
+           margin-top: -1rem;
+          }
+
+          .nav-close {
+            position: absolute;
+            top: 0.5em;
+            right: 1em;
+          }
+          
+          .show-menu {
+            top: 0;
+            transition: .9s ease;
+          }
+
+           .logo-img {
+            top: 0.9rem;
+        }
+        
+
+        .hire-btn {
+           left: 36rem;
+        }
+    
+        .about {
+            gap: 20rem;
+        }
+
+        .about-item {
+            margin-top: 5rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 50px;
+        }
+        
+        .about p {
+            font-size: 15px;
+        }
+        
+        .social {
+            margin-top: 3rem;
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .cv {
+            padding: 20px 25px;
+            width: 70%;
+        }
+        
+        .cv a {
+            color: #8750f7;
+            text-decoration: none;
+            transition: color 0.3s; 
+        }
+
+        .fa-download {
+            position: absolute;
+            left: 10rem;
+            top: -0.3rem;
+        }
+        
+        .social-icons div {
+            width: 48px;
+            height: 48px;
+            
+        }
+
+        .fa-twitter, 
+        .fa-github,
+         .fa-linkedin-in {
+            position: absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+        }
+
+        .fa-twitter, .fa-github, .fa-linkedin-in {
+            font-size: 25px;
+        }
+        
+
+        
+        .IMGS {
+            border-radius: 20px;
+            top: -4rem;
+        }
+        
+        .IMG1 {
+            width: 18rem;
+            height: 18rem;
+            left: 33rem;
+            top: 14rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            top: 16.5rem;   
+            left: 33rem;
+        }
+        
+        
+        /* ::::::::::::::::::::::::::::::::::::::::: Home ends here :::::::::::::::::::::::::::::::::::::::  */
+        
+
+    .skills p {
+            font-size: 14px;
+    }
+
+    .skills-p {
+        font-size: 13px;
+    }
+
+    .skills-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 1px;
+    }
+    
+    .javascript, .react, .vue, .angular, .wordpress, .figma {
+        width: 11rem;
+
+    }
+    
+    .skills-icons p {
+        font-size: 25px;
+    }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        
+        .main-portfolio .portfolio {
+            grid-template-columns: 1fr 1fr;
+            gap: -1rem;
+            margin-left: 2.5rem;
+        }
+        
+        .frames {
+            width: 25rem;
+            height: 18rem;
+        }  
+
+        .portfolio-text {
+            top: 10rem;
+            left: 0.5rem;
+        }
+
+        .portfolio-text h3 {
+            font-size: 10px;
+        }
+
+        .portfolio-text p {
+            font-size: 10px;
+        }
+
+        .portfolio-text span a { 
+            font-size: 1rem;
+        }
+
+        #load-more {
+            margin-left: 24rem;
+        }
+        
+        
+    
+        /* ::::::::::::::::::::::::::::Portfolio ends here::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+       
+       
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+      
+        
+        .alt-school, .school, .regonent  {
+            font-size: 10px;
+            
+        }
+        
+        .education h1 {
+            font-size: 40px; 
+        }
+
+        .fa-award, .fa-graduation-cap {
+            margin-left: 2rem;
+        }
+    
+        .alt-school,
+        .regonent,
+        .school {
+            width: 20rem;
+        }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+       
+        input {
+            width: 10rem;
+        }
+    
+        .details {
+            margin-right: 10rem;
+        }
+        
+        
+        .message-input {
+            width: 21rem;
+        }
+        
+        
+        .phone, .email, .address h3 {
+            font-size: 15px;
+        }
+        /* ::::::::::::::::::::::::::::::::::::::::::::: Contact ends here::::::::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            left: 23rem;
+            top: 320rem;
+        }
+    }
+
+       /* ::::::::::::::::::::::::::::::::::::::::::::::: Footer ends here:::::::::::::::::::::::::::::::::::::::::  */
+
+
+    @media (max-width: 820px) {
+        .nav-menu {
+            position: fixed;
+            top: -100%;
+            left: 4rem;
+            background: #2a1454;
+            width: 100%;
+            box-shadow: 0 1px 16px hsl(210, 55%, 24%, .1);
+            padding-block: 3.5em 2em;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5em;
+            transition: .9s ease-out;
+          }
+
+          .nav-toggle, .nav-close {
+            display: inline-flex;
+            font-size: 3rem;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        
+          .nav-list {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 2em;
+            margin-left: 2em;
+          }
+
+          .nav-toggle {
+           margin-left: 41.4rem;
+           margin-top: -1rem;
+          }
+
+          .nav-close {
+            position: absolute;
+            top: 0.5em;
+            right: 1em;
+          }
+          
+          .show-menu {
+            top: 0;
+            transition: .9s ease;
+          }
+
+           .logo-img {
+            top: 0.9rem;
+        }
+        
+
+        .hire-btn {
+           left: 32rem;
+        }
+    
+        .about {
+            gap: 20rem;
+        }
+
+        .about-item {
+            margin-top: 5rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 50px;
+        }
+        
+        .about p {
+            font-size: 15px;
+        }
+        
+        .social {
+            margin-top: 3rem;
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .cv {
+            padding: 20px 25px;
+            width: 70%;
+        }
+        
+        .cv a {
+            color: #8750f7;
+            text-decoration: none;
+            transition: color 0.3s; 
+        }
+
+        .fa-download {
+            position: absolute;
+            left: 10rem;
+            top: -0.3rem;
+        }
+        
+        .social-icons div {
+            width: 48px;
+            height: 48px;
+            
+        }
+
+        .fa-twitter, 
+        .fa-github,
+         .fa-linkedin-in {
+            position: absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+        }
+
+        .fa-twitter, .fa-github, .fa-linkedin-in {
+            font-size: 25px;
+        }
+        
+
+        
+        .IMGS {
+            border-radius: 20px;
+            top: -4rem;
+        }
+        
+        .IMG1 {
+            width: 18rem;
+            height: 18rem;
+            left: 28rem;
+            top: 14rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            top: 16.5rem;   
+            left: 29rem;
+        }
+        
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::: Home ends here ::::::::::::::::::::::::::::::::::::::::::::::  */
+        
+
+    .skills p {
+            font-size: 14px;
+    }
+
+    .skills-p {
+        font-size: 13px;
+    }
+
+    .skills-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 1px;
+    }
+    
+    .javascript, .react, .vue, .angular, .wordpress, .figma {
+        width: 11rem;
+
+    }
+    
+    .skills-icons p {
+        font-size: 25px;
+    }
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::: Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        
+        .main-portfolio .portfolio {
+            grid-template-columns: 1fr 1fr;
+            gap: -1rem;
+            margin-left: 1.3rem;
+        }
+        
+        .frames {
+            width: 23rem;
+            height: 18rem;
+        }  
+
+        .portfolio-text {
+            top: 10rem;
+            left: 0.5rem;
+        }
+
+        .portfolio-text h3 {
+            font-size: 10px;
+        }
+
+        .portfolio-text p {
+            font-size: 10px;
+        }
+
+        .portfolio-text span a { 
+            font-size: 1rem;
+        }
+
+        #load-more {
+            margin-left: 21rem;
+        }
+        
+        
+    
+        /* :::::::::::::::::::::::::::::::::::::::::::::: Portfolio ends here::::::::::::::::::::::::::::::::::::::::::::::  */
+       
+       
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+      
+        
+        .alt-school, .school, .regonent  {
+            font-size: 10px;
+            
+        }
+        
+        .education h1 {
+            font-size: 40px; 
+        }
+
+        .fa-award, .fa-graduation-cap {
+            margin-left: 2rem;
+        }
+    
+        .alt-school,
+        .regonent,
+        .school {
+            width: 20rem;
+        }
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+       
+        input {
+            width: 10rem;
+        }
+    
+        .details {
+            margin-right: 10rem;
+        }
+        
+        
+        .message-input {
+            width: 21rem;
+        }
+        
+        
+        .phone, .email, .address h3 {
+            font-size: 15px;
+        }
+        /* :::::::::::::::::::::::::::::::::::::::::: Contact ends here :::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            left: 23rem;
+            top: 320rem;
+        }
+    }
+
+       /* ::::::::::::::::::::::::::::::::::::::::::: Footer ends here :::::::::::::::::::::::::::::::::::::::::::::  */
+
+
+    @media (max-width: 768px) {
+        .nav-menu {
+            position: fixed;
+            top: -100%;
+            left: 4rem;
+            background: #2a1454;
+            width: 100%;
+            box-shadow: 0 1px 16px hsl(210, 55%, 24%, .1);
+            padding-block: 3.5em 2em;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5em;
+            transition: .9s ease-out;
+          }
+
+          .nav-toggle, .nav-close {
+            display: inline-flex;
+            font-size: 3rem;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        
+          .nav-list {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 2em;
+            margin-left: 2em;
+          }
+
+          .nav-toggle {
+           margin-left: 41.4rem;
+           margin-top: -1rem;
+          }
+
+          .nav-close {
+            position: absolute;
+            top: 0.5em;
+            right: 1em;
+          }
+          
+          .show-menu {
+            top: 0;
+            transition: .9s ease;
+          }
+
+           .logo-img {
+            top: 0.9rem;
+        }
+        
+
+        .hire-btn {
+           left: 32rem;
+        }
+    
+        .about {
+            gap: 20rem;
+        }
+
+        .about-item {
+            margin-top: 5rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 50px;
+        }
+        
+        .about p {
+            font-size: 15px;
+        }
+        
+        .social {
+            margin-top: 3rem;
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .cv {
+            padding: 20px 25px;
+            width: 70%;
+        }
+        
+        .cv a {
+            color: #8750f7;
+            text-decoration: none;
+            transition: color 0.3s; 
+        }
+
+        .fa-download {
+            position: absolute;
+            left: 10rem;
+            top: -0.3rem;
+        }
+        
+        .social-icons div {
+            width: 48px;
+            height: 48px;
+            
+        }
+
+        .fa-twitter, 
+        .fa-github,
+         .fa-linkedin-in {
+            position: absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+        }
+
+        .fa-twitter, .fa-github, .fa-linkedin-in {
+            font-size: 25px;
+        }
+        
+
+        
+        .IMGS {
+            border-radius: 20px;
+            top: -4rem;
+        }
+        
+        .IMG1 {
+            width: 18rem;
+            height: 18rem;
+            left: 28rem;
+            top: 14rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            top: 16.5rem;   
+            left: 29rem;
+        }
+        
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::: Home ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+
+    .skills p {
+            font-size: 14px;
+    }
+
+    .skills-p {
+        font-size: 13px;
+    }
+
+    .skills-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 1px;
+    }
+    
+    .javascript, .react, .vue, .angular, .wordpress, .figma {
+        width: 11rem;
+
+    }
+    
+    .skills-icons p {
+        font-size: 25px;
+    }
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::::: Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        
+        .main-portfolio .portfolio {
+            grid-template-columns: 1fr 1fr;
+            gap: -1rem;
+            margin-left: 1.3rem;
+        }
+        
+        .frames {
+            width: 21.7rem;
+            height: 18rem;
+        }  
+
+        .portfolio-text {
+            top: 10rem;
+            left: 0.5rem;
+        }
+
+        .portfolio-text h3 {
+            font-size: 10px;
+        }
+
+        .portfolio-text p {
+            font-size: 10px;
+        }
+
+        .portfolio-text span a { 
+            font-size: 1rem;
+        }
+
+        #load-more {
+            margin-left: 19rem;
+        }
+        
+        
+    
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::: Portfolio ends here:::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+       
+       
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+      
+        
+        .alt-school, .school, .regonent  {
+            font-size: 10px;
+            
+        }
+        
+        .education h1 {
+            font-size: 40px; 
+        }
+
+        .fa-award, .fa-graduation-cap {
+            margin-left: 2rem;
+        }
+    
+        .alt-school,
+        .regonent,
+        .school {
+            width: 20rem;
+        }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+       
+        input {
+            width: 10rem;
+        }
+    
+        .details {
+            margin-right: 10rem;
+        }
+        
+        
+        .message-input {
+            width: 21rem;
+        }
+        
+        
+        .phone, .email, .address h3 {
+            font-size: 15px;
+        }
+        /* :::::::::::::::::::::::::::::::::::::::: Contact ends here:::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            left: 23rem;
+            top: 320rem;
+        }
+    }
+
+       /* ::::::::::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::::::::::::::::::::  */
+
+ 
+       @media (max-width: 540px) {
+
+        
+        .logo-img {
+            left: 2rem;
+            top: 1rem;
+            
+        }
+        
+        .header {
+            padding: 2rem;
+           
+        }
+
+        .nav-toggle {
+            margin-left: 27rem;
+            margin-top: -1rem;
+        }
+ 
+        .nav-close {
+             top: 0.5em;
+             right: 1.3rem;
+        }
+        
+        .hire-btn {
+            top: 2rem;
+            left: 18rem;
+        }
+        
+        
+        .about {
+            display: grid;
+            margin-bottom: -20rem;
+        }
+        
+        .about-item {
+            margin-top: 1rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 40px;
+            margin-bottom: 25rem;
+        }
+        
+        .about p {
+            font-size: 15px;
+            
+        }
+        
+        .IMG1 {
+            width: 20rem;
+            height: 20rem;
+            top: 17.5rem;
+            left: 7rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            left: 7rem; 
+            top: 22rem;   
+        }
+        
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::: Home ends here :::::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .skills {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+        
+        .skills h1 {
+            font-size: 50px;
+        }
+        
+        .skills p {
+            font-size: 20px;
+            padding-bottom: 2rem;
+        }
+
+        .skills-p {
+            font-size: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .skills-icons {
+            display: flex;
+            flex-wrap: wrap;
+            /* grid-template-columns: 1fr 1fr; */
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        .main-portfolio {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+        }
+        
+        .main-portfolio h1 {
+            font-size: 50px;
+        }
+       
+        
+        .main-portfolio .portfolio {
+            grid-template-columns: 1fr;
+            gap: -1rem;
+            margin-left: 4rem;
+        }
+        
+        .frames {
+            width: 25rem;
+            height: 18rem;
+        }
+        
+        .portfolio-text {
+            top: 180px;
+            left: 1.2rem;
+            width: 90%;
+            height: 40%;
+        }
+
+
+        #load-more {
+            margin-left: 12rem;
+        }
+
+        
+        
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::::::: Portfolio ends here ::::::::::::::::::::::::::::::::::::::::::  */
+        .resume {
+            display: grid;
+            padding-bottom: 3rem;
+        }
+        
+        .alt-school,
+        .regonent,
+        .school {
+            width: 22rem;
+            margin-left: 0.5rem;
+        }
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+
+        .education h1 {
+            font-size: 40px;
+        }
+
+        /* ::::::::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+        .contact {
+            display: grid;
+        }
+        
+        .contact h1 {
+            font-size: 36px;   
+        }
+        
+        .inputs {
+            width: 25rem;
+        }
+        
+        input {
+            width: 20rem;
+        }
+        
+        .input1 {
+            display: grid;
+        }
+        
+        .input2 {
+            display: grid;
+        }
+        
+        .input3 {
+            display: grid;
+        }
+        
+        .message-input {
+            width: 20rem;
+        }
+        
+        .details {
+            margin-left: 1.5rem;
+        }
+        
+        .phone, .email, .address h3 {
+            font-size: 18px;
+        }
+
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::: Contact ends here:::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            width: 5.5rem;
+            height: 5.5rem;
+            left: 10rem;
+            top: 459rem;
+        }
+        
+        .footer ul li a {
+            font-size: 12px;
+        }
+        
+        /* ::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::::::::::::::::::::::::  */
+        
+       }
+
+
+       @media (max-width: 430px) {
+
+        
+        .logo-img {
+            left: 2rem;
+            top: 1rem;
+            
+        }
+        
+        .header {
+            padding: 2rem;
+           
+        }
+
+        .nav-toggle {
+            margin-left: 20rem;
+            margin-top: -1rem;
+        }
+ 
+        .nav-close {
+             top: 0.5em;
+             right: 1.3rem;
+        }
+        
+        .hire-btn {
+            top: 2rem;
+            left: 12rem;
+        }
+        
+        
+        .about {
+            display: grid;
+            margin-bottom: -20rem;
+        }
+        
+        .about-item {
+            margin-top: 1rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 40px;
+            margin-bottom: 25rem;
+        }
+        
+        .about p {
+            font-size: 15px;
+            
+        }
+        
+        .IMG1 {
+            width: 20rem;
+            height: 20rem;
+            top: 17.5rem;
+            left: 4rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            left: 4rem; 
+            top: 22rem;   
+        }
+        
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::: Home ends here :::::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .skills {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+        
+        .skills h1 {
+            font-size: 50px;
+        }
+        
+        .skills p {
+            font-size: 20px;
+            padding-bottom: 2rem;
+        }
+
+        .skills-p {
+            font-size: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .skills-icons {
+            display: flex;
+            flex-wrap: wrap;
+            /* grid-template-columns: 1fr 1fr; */
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        .main-portfolio {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+        }
+        
+        .main-portfolio h1 {
+            font-size: 50px;
+        }
+       
+        
+        .main-portfolio .portfolio {
+            grid-template-columns: 1fr;
+            gap: -1rem;
+            margin-left: 3rem;
+        }
+        
+        .frames {
+            width: 21.7rem;
+            height: 18rem;
+        }
+        
+        .portfolio-text {
+            top: 180px;
+            left: 1.2rem;
+            width: 90%;
+            height: 40%;
+        }
+
+
+        #load-more {
+            margin-left: 8rem;
+        }
+
+        
+        
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::::::: Portfolio ends here ::::::::::::::::::::::::::::::::::::::::::  */
+        .resume {
+            display: grid;
+            padding-bottom: 3rem;
+        }
+        
+        .alt-school,
+        .regonent,
+        .school {
+            width: 22rem;
+            margin-left: 0.5rem;
+        }
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+
+        .education h1 {
+            font-size: 40px;
+        }
+
+        /* ::::::::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+        .contact {
+            display: grid;
+        }
+        
+        .contact h1 {
+            font-size: 36px;   
+        }
+        
+        .inputs {
+            width: 25rem;
+        }
+        
+        input {
+            width: 20rem;
+        }
+        
+        .input1 {
+            display: grid;
+        }
+        
+        .input2 {
+            display: grid;
+        }
+        
+        .input3 {
+            display: grid;
+        }
+        
+        .message-input {
+            width: 20rem;
+        }
+        
+        .details {
+            margin-left: 1.5rem;
+        }
+        
+        .phone, .email, .address h3 {
+            font-size: 18px;
+        }
+
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::: Contact ends here:::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            width: 5.5rem;
+            height: 5.5rem;
+            left: 10rem;
+            top: 459rem;
+        }
+        
+        .footer ul li a {
+            font-size: 12px;
+        }
+        
+        /* ::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::::::::::::::::::::::::  */
+        
+       }
+
+
+       @media (max-width: 414px) {
+
+        .IMG1 {
+            top: 17.5rem;
+            left: 2.9rem;
+        }
+        
+        .IMG2 {
+            left: 4rem; 
+            top: 22rem;   
+        }
+       
+        
+        .skills-icons {
+            display: flex;
+        }
+
+        .main-portfolio .portfolio {
+            margin-left: 2.3rem;
+        }
+        
+        
+        .footer img {
+            width: 5.5rem;
+            height: 5.5rem;
+            left: 10rem;
+            top: 460rem;
+        }
+        
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::::::::::::::::::::  */
+        
+       }
+
+
+       @media (max-width: 390px) {
+
+        .nav-toggle {
+            margin-left: 19rem;
+            
+        }
+
+        .IMG1 {
+            width: 19rem;
+            height: 19rem;
+            top: 17.5rem;
+            left: 2.9rem;
+        }
+        
+        .IMG2 {
+            left: 4rem; 
+            top: 21rem;   
+        }
+
+        .skills-icons {
+            display: flex;
+        }
+
+        .contact {
+            display: grid;
+        }
+        
+        .contact h1 {
+            font-size: 30px;   
+        }
+        
+        .inputs {
+            width: 22rem;
+        }
+        
+        input {
+            width: 18rem;
+        }
+        
+        .message-input {
+            width: 18rem;
+        }
+        
+        .details {
+            margin-left: 1.5rem;
+        }
+        
+        .phone, .email, .address h3 {
+            font-size: 15px;
+        }
+
+        .main-portfolio .portfolio {
+            margin-left: 1.4rem;
+        }
+       }
+
+       /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+
+
+       @media (max-width: 375px) {
+
+        
+        .logo-img {
+            left: 2rem;
+            top: 1rem;
+            
+        }
+        
+        .header {
+            padding: 2rem;
+           
+        }
+
+        .nav-toggle {
+            margin-left: 18rem;
+            margin-top: -0.5rem;
+            font-size: 2.5rem;
+        }
+ 
+        .nav-close {
+             top: 0.5em;
+             right: 1.3rem;
+        }
+        
+        .hire-btn {
+            top: 2rem;
+            left: 10rem;
+        }
+        
+        
+        .about {
+            display: grid;
+            margin-bottom: -20rem;
+        }
+        
+        .about-item {
+            margin-top: 1rem;
+        }
+        
+        .about h3 {
+            font-size: 30px;
+        }
+        
+        .about h1 {
+            font-size: 40px;
+            margin-bottom: 25rem;
+        }
+        
+        .about p {
+            font-size: 14px;
+            
+        }
+
+        .cv a {
+            font-size: 20px;
+        }
+        
+        .IMG1 {
+            width: 18rem;
+            height: 18rem;
+            top: 17.5rem;
+            left: 3rem;
+        }
+        
+        .IMG2 {
+            width: 15rem;
+            height: 15rem;
+            left: 4rem; 
+            top: 20rem;   
+        }
+        
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::: Home ends here :::::::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .skills {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+        
+        .skills h1 {
+            font-size: 50px;
+        }
+        
+        .skills p {
+            font-size: 20px;
+            padding-bottom: 2rem;
+            
+        }
+
+        .skills-p {
+            font-size: 7px;
+        }
+        
+        .skills-icons {
+            display: grid;
+        }
+        
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: Skills ends here ::::::::::::::::::::::::::::::::::::::::  */
+        
+        .main-portfolio {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+        }
+        
+        .main-portfolio h1 {
+            font-size: 50px;
+        }
+       
+        
+        .portfolio-text {
+            top: 180px;
+            left: 1.2rem;
+            width: 90%;
+            height: 40%;
+        }
+
+        .main-portfolio .portfolio {
+            margin-left: 1rem;
+        }
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::::: Portfolio ends here::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+        .resume {
+            display: grid;
+            padding-bottom: 3rem;
+        }
+        
+        .alt-school,
+        .regonent,
+        .school {
+            width: 20rem;
+            margin-left: 0.5rem;
+        }
+        
+        .fa-award, .fa-graduation-cap {
+            font-size: 2rem;
+        }
+        
+        .certification h1 {
+            font-size: 40px;
+        }
+
+        .education h1 {
+            font-size: 40px;
+        }
+
+        /* :::::::::::::::::::::::::::::::::::::::::::::::::::: Resume ends here :::::::::::::::::::::::::::::::::::::::::  */
+        
+        .contact {
+            display: grid;
+        }
+        
+        .contact h1 {
+            font-size: 30px;   
+        }
+        
+        .inputs {
+            width: 22rem;
+        }
+        
+        input {
+            width: 18rem;
+        }
+        
+        .message-input {
+            width: 18rem;
+        }
+        
+        .details {
+            margin-left: 1.5rem;
+        }
+        
+        .phone, .email, .address h3 {
+            font-size: 15px;
+        }
+
+        /* ::::::::::::::::::::::::::::::::::::::::::::::: Contact ends here:::::::::::::::::::::::::::::::::::::::::::::::::::::  */
+        
+        .footer img {
+            width: 5.5rem;
+            height: 5.5rem;
+            left: 10rem;
+            top: 513rem;
+        }
+        
+        .footer ul li a {
+            font-size: 10px;
+        }
+
+        .footer span {
+            font-size: 15px;
+        }
+        
+        /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Footer ends here::::::::::::::::::::::  */
+        
+       }
+
+
+       @media (max-width: 360px) {
+
+        .main-portfolio .portfolio {
+            margin-left: 1.4rem;
+        }
+
+        .frames {
+            width: 19.8rem; 
+        }
+
+        #load-more {
+            margin-left: 6rem;
+        }
+
+       }
+
+       @media (max-width: 344px) {
+
+        .header {
+            padding: 2rem;
+            width: 30%;
+           
+        }
+
+        .nav-toggle {
+            margin-left: 16rem;
+        }
+
+        
+        .hire-btn {
+            top: 2rem;
+            left: 7rem;
+            width: 140%;
+        }
+
+        .main-portfolio .portfolio {
+            margin-left: 1.4rem;
+        }
+
+        .frames {
+            width: 19rem; 
+        }
+
+        #load-more {
+            margin-left: 6rem;
+        }
+
+       }
+
+
+
